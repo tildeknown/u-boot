@@ -1557,6 +1557,18 @@ config TARGET_LX2162AQDS
 	  Support for NXP LX2162AQDS platform.
 	  The lx2162aqds support is based on LX2160A Layerscape Architecture processor.
 
+config TARGET_AGASSI2
+	bool "agassi2"
+	select ARM64
+	select DM
+	select DM_SERIAL
+	select OF_CONTROL
+	select PL01X_SERIAL
+	select SPECIFY_CONSOLE_INDEX
+	imply CMD_DM
+	  help
+	  Support for huawei agassi2
+
 config TARGET_HIKEY
 	bool "Support HiKey 96boards Consumer Edition Platform"
 	select ARM64
@@ -2433,6 +2445,7 @@ source "board/nxp/ls1012ardb/Kconfig"
 source "board/nxp/ls1012afrdm/Kconfig"
 source "board/nxp/lx2160a/Kconfig"
 source "board/grinn/chiliboard/Kconfig"
+source "board/huawei/agassi2/Kconfig"
 source "board/hisilicon/hikey/Kconfig"
 source "board/hisilicon/hikey960/Kconfig"
 source "board/hisilicon/poplar/Kconfig"

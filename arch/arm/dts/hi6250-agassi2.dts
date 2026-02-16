@@ -1,0 +1,16 @@
+// SPDX-License-Identifier: GPL-2.0-only
+/*
+ * Device tree for Huawei Mediapad T5
+ *
+ * Copyright (C) 2025, Tildeguy (tildeguy@mainlining.org)
+ */
+
+/dts-v1/;
+
+// #include "hi6250-minimal.dtsi"
+
+/ {
+	model = "Huawei Mediapad T5";
+	compatible = "huawei,agassi2", "hisilicon,hi6250";
+	// chassis-type = "handset";
+};

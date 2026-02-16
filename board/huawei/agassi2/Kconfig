@@ -1,0 +1,13 @@
+if TARGET_AGASSI2
+
+config SYS_BOARD
+	default "agassi2"
+
+config SYS_VENDOR
+	default "huawei"
+
+config SYS_CONFIG_NAME
+	default "agassi2"
+
+endif
+
